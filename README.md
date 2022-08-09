@@ -6,12 +6,13 @@ My program utilizes imagenet and resnet-18. It uses imagenet to views the live v
 
 # Running the Program
 1. Login into your nano
-2. Click on code and download as a .zip file, upload and unzip in nano under the jetson-inference/python/training/classification/data directory.
+2. Click on code and download as a .zip file, upload and unzip in nano under the jetson-inference/python/training/classification/data directory
 3. cd back to jetson-inference
 4. Run the docker using docker/run.sh
 5. cd into python/training/classification
-6. To run the code, type: imagenet --model=models/kitchen/resnet18.onnx --labels=data/kitchen/labels.txt --input-blob=input_0 --output-blob=output_0 /dev/video0
-7. Show one of the 10 following items:
+6. Train the data by using: python3 train.py --model-dir=models/kitchen --batch-size=4 --workers=1 data/kitchen
+7. To run the code, type: imagenet --model=models/kitchen/resnet18.onnx --labels=data/kitchen/labels.txt --input-blob=input_0 --output-blob=output_0 /dev/video0
+8. Show one of the 10 following items:
     1. cheese grater
     2. ladle
     3. large spoon
