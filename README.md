@@ -6,7 +6,7 @@ My program utilizes imagenet and resnet-18. It uses imagenet to views the live v
 
 # Running the Program
 1. Login into your nano
-2. Click on code and download as a .zip file, upload and unzip in nano under the jetson-inference/python/training/classification/data directory
+2. Click on code and download as a .zip file, upload and unzip in nano under the jetson-inference/python/training/classification directory
 3. cd back to jetson-inference
 4. Run the docker using docker/run.sh
 5. cd into python/training/classification
